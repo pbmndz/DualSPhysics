@@ -1,0 +1,28 @@
+dir
+GenCase_win64.exe
+GenCase_win64.exe C:\Users\pbmen\Desktop\mytest\simtest "C:\Users\pbmen\Desktop\mytest\RUN
+
+CLS	
+
+dir 
+DualSPHysics5.2_win64.exe
+DualSPHysics5.2_win64.exe C:\Users\pbmen\Desktop\mytest\RUN C:\Users\pbmen\Desktop\mytest\out\ -sv:binx
+
+-gpu 
+
+PartVTK_win64.exe
+PartVTK_win64.exe -dirin C:\Users\pbmen\Desktop\mytest\out\ -savevtk C:\Users\pbmen\Desktop\mytest\out\fluid.vtk -onlytype:-all,+fluid 
+
+
+GenCase_win64.exe FILE , FOLDER LOC/RUN 
+
+
+
+
+GenCase_win64.exe C:\Users\pbmen\Desktop\mytest\simtest "C:\Users\pbmen\Desktop\mytest\RUN
+
+DualSPHysics5.2_win64.exe C:\Users\pbmen\Desktop\mytest\RUN C:\Users\pbmen\Desktop\mytest\out\ -sv:binx
+
+PartVTK_win64.exe -dirin C:\Users\pbmen\Desktop\mytest\out\ -savevtk C:\Users\pbmen\Desktop\mytest\out\fluid.vtk -onlytype:-all,+fluid 
+
+
